@@ -1,0 +1,327 @@
+
+/* Declaración de Fuente */
+@font-face {
+    font-family: "gd_code";
+    src: url('../font/codelight.ttf')
+}
+
+@font-face {
+    font-family: "gd_code_bold";
+    src: url('../font/codebold.ttf')
+        
+}
+
+/* Definición de Estilos */
+
+/*   MENU   */
+
+* {
+    font-family: gd_code_bold;
+    margin: 0;
+    color: #424242;
+    
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+header {
+    width: 200px;
+    height: 150px;
+    display: inline-block;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    height: 70px;
+    width: 950px;
+    color: #424242;
+    padding-top: 40px;
+}
+
+.menu_lineal {
+    display: inline-block;
+}
+
+.menu {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 3px;
+    list-style-type: none;
+    color: #424242;
+    
+}
+
+a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #424242;
+}
+
+.menu:hover {
+    background-color: #00aff5
+}
+
+.menu a:hover{
+    color: white;
+}
+
+/*   TITULO   */
+
+.titulo {
+    margin-top: 50px;
+    margin-left: 175px;
+    margin-bottom: 0.5px;
+    height: 20px;
+}
+    
+.linea {
+    margin-left: 170px;
+    text-align: center;
+}
+
+/*   CONTENIDO   */
+
+/*   INICIO    */
+
+.inicio_uno {
+    display: inline-block;
+    width: 500px;
+    margin: 50px;
+    line-height: 30px;    
+}
+
+.inicio_uno_bkg {
+    background-image: url(../images/GESTADATA_LOGOS-06.png);
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.inicio_dos {
+    display: inline-block;
+    position: relative;
+    width:300px;
+    margin-top: 50px;
+    margin-right:50px;
+}
+
+.inicio_nos_uno {
+        display: inline-block;
+        position: relative;
+        width:200px;
+        margin-top: 50px;
+        margin-right:50px;
+}
+
+.inicio_nos_dos {
+    display: inline-block;
+    width: 300px;
+    margin: 50px;
+    line-height: 25px; 
+}
+
+.inicio_serv_uno {
+    display: inline-block;
+    width: 350px;
+    margin: 50px;
+    line-height: 25px; 
+}
+
+.inicio_serv_dos {
+    display: inline-block;
+    position: relative;
+    width:200px;
+    margin-top: 50px;
+    margin-right:50px;
+}
+
+.contacto_texto {
+    display: inline-block;
+    width: 300px;
+    margin: 50px;
+    line-height: 30px;
+}
+
+
+/*   NOSOTROS   */
+
+section {
+    text-align: center;
+    width: 1300px;
+    margin:20px;
+}
+
+.nosotros_uno {
+    display: inline-block;
+    position: relative;
+    width:300px;
+    margin-top: 50px;
+    margin-right:50px;
+}
+
+.nosotros_dos {
+    display: inline-block;
+    width: 500px;
+    margin: 50px;
+    line-height: 25px;    
+}
+
+/*   SERVICIOS   */
+
+.servicios_uno {
+    display: inline-block;
+    width: 400px;
+    margin: 50px;
+    line-height: 25px;
+}
+
+.servicios_dos {
+    display: inline-block;
+    position: relative;
+    width:300px;
+    margin-top: 50px;
+    
+}
+
+.subtitulo {
+    margin-bottom: 10px;
+    font-weight:bolder;
+}
+
+/*   TECNOLOGIAS   */
+
+.tecnologias_uno {
+    display: inline-block;
+    width: 300px;
+    margin: 50px;
+    
+}
+
+.tecnologias_texto_uno {
+    display: inline-block;
+    position: relative;
+    width:300px;
+    line-height: 25px;
+    margin-right: 50px;
+}
+
+.tecnologias_texto_dos {
+    display: inline-block;
+    position: relative;
+    width:300px;
+    line-height: 25px;
+    margin-left: 50px;
+}
+
+/*    CONTACTO   */
+
+.contacto_uno {
+    display: inline-block;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 40px;
+    vertical-align:top;
+}
+
+.contacto_dos {
+    display: inline-block;
+}
+.contacto_formulario {
+    display: inline-block;
+    position: relative;
+}
+
+.contacto_lista {
+    list-style-type: none;
+}
+
+.contacto_cajas_txt {
+    display: inline-block;
+    position: relative;
+    height: 30px;
+    width: 300px;
+    border-radius: 20px;
+    margin-top: 5px;
+    font-size: 16px;
+    padding-left: 10px;
+    background-color: #cfcfcf;
+    border-style: hidden
+}
+
+.contacto_caja_msj {
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-top: 3px;
+    margin-right: 100px;
+    padding-left: 10px;
+    background-color: #cfcfcf;
+    border-style: hidden
+}
+
+.contacto_etiqueta {
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 3px;
+    list-style-type: none;
+    color: #424242;
+    font-size: 18px;
+    text-align: right;
+    color: #0c598d;
+}
+
+.contacto_boton {
+    text-align: right;
+}
+
+.boton {
+    display: inline-block;
+    height: 50px;
+    width: 150px;
+    margin-top: 30px;
+    margin-right: 100px;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: #b4eaff;
+    border-style: hidden
+}
+
+.boton:hover {
+    background-color: #00aff5;
+    color: white;
+    cursor: pointer;
+}
+
+.redes {
+    display: inline-block;
+    width: 1200px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+footer p {
+    text-align: center;
+    vertical-align: middle;
+    height: 50px;
+    width: 940px;
+    margin-bottom: 20px;
+    margin-left: 180px;
+    padding-top: 30px;
+    background-color: #00aff5;
+}
+
+
+
