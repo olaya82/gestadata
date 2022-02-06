@@ -75,6 +75,7 @@ body {
 
 .menu {
     display: inline-block;
+    height: 35px;
     width: 155px;
     padding-top: 5px;
     border-radius: 5px;
@@ -87,15 +88,6 @@ a{
     text-decoration: none;
     font-size: 22px;
     color: #424242;
-}
-
-.menu:hover {
-    background-color: #00aff5;
-    
-}
-
-.menu a:hover{
-    color: white;
 }
 
 .grid-main {
@@ -397,7 +389,6 @@ a{
 .grid-section-cont {
     display: grid;
     grid-column-start: 2;
-    background-color: blue;
     margin-top: 20px;
     margin-left: 75px;
     margin-bottom: 228px;
@@ -478,12 +469,6 @@ a{
     border-style: hidden;
 }
 
-.boton:hover {
-    background-color: #00aff5;
-    color: white;
-    cursor: pointer;
-}
-
 /*   REDES  */
 
 .grid-redes {
@@ -499,6 +484,11 @@ a{
     margin-top: 10px;
 }
 
+.img-redes {
+    height: 40px;
+    width: 40px;
+}
+
 
 /*  PIE DE PAGINA  */
 
@@ -511,4 +501,94 @@ a{
     height: 50px;
     padding-top: 30px;
     background-color: #00aff5;
+}
+
+
+/*   TRANSICIONES   */
+
+.trans-redesloc:hover {
+    transition: 2s;
+    transform: rotate(360deg) ;
+    
+}
+
+.trans-img-inicio:hover {
+    transition: 2s;
+    transform: scale(1.2);
+}
+
+.trans-texto-incio:hover {
+    transition: 2s;
+    transform: scale(1.2);
+}
+
+.menu:hover {
+    background-color: #00aff5;
+    
+}
+
+.menu a:hover{
+    color: white;
+}
+
+.boton:hover {
+    background-color: #00aff5;
+    color: white;
+    cursor: pointer;
+}
+
+/*   ANIMACIONES   */
+
+.titulo-inicio-animado {
+    animation-name: titulo;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+
+@keyframes titulo {
+    from {
+        transform: translate(-200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+.izq-der-nos {
+    animation-name: izq-der;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+
+@keyframes izq-der {
+    from {
+        transform: translate(-200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+.der-izq-nos {
+    animation-name: img-nos;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+
+@keyframes img-nos {
+    from {
+        transform: translate(200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
 }
