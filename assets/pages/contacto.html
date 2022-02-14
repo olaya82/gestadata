@@ -4,76 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
     <link rel="shortcut icon" href="../images/gestadata_icon.png">
     <!--Estilos-->
     <link rel="stylesheet" type="text/css" href="../styles/estilos.css" media="screen">
+    <script type="text/javascript">
+
+        document.addEventListener("DOMContentLoaded", function(){
+	    // add padding top to show content behind navbar
+    	    navbar_height = document.querySelector('.navbar').offsetHeight;
+	        document.body.style.paddingTop = navbar_height + 'px';
+        }); 
+        // DOMContentLoaded  end
+    </script>
+
     <title>Gestadata - Contacto</title>
 </head>
-<body class="grid-contenedor">
-    <header class="grid-header">
+<body>
+    <header class="container-fluid fixed-top">
         <!--Logo Empresarial-->
         <img class="logo" src="../images/GESTADATA_LOGOS-01.png" alt="Logo Gestadata">
     </header>
-    <nav class="grid-nav">
-        <!--Menu de Navegación-->
-        <ul class="menu_lineal">
-            <li class="menu"><a href="../../index.html">INICIO</a></li>
-            <li class="menu"><a href="../pages/nosotros.html">NOSOTROS</a></li>
-            <li class="menu"><a href="../pages/servicios.html">SERVICIOS</a></li>
-            <li class="menu"><a href="../pages/tecnologias.html">TECNOLOGIAS</a></li>
-            <li class="menu"><a href="../pages/contacto.html">CONTACTO</a></li>
-        </ul>
+    
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item menu"><a href="../../index.html">INICIO</a></li>
+                        <li class="nav-item menu"><a href="../pages/nosotros.html">NOSOTROS</a></li>
+                        <li class="nav-item menu"><a href="../pages/servicios.html">SERVICIOS</a></li>
+                        <li class="nav-item menu"><a href="../pages/tecnologias.html">TECNOLOGIAS</a></li>
+                        <li class="nav-item menu"><a href="../pages/contacto.html">CONTACTO</a></li>
+                    </ul>
+            </div> <!-- navbar-collapse.// -->
+        </div> <!-- container-fluid.// -->
     </nav>
 
-    <main class="grid-main">
+    <main>
         <!--Seccion Contactos-->
-        <h1 class="titulo">CONTACTO</h1>
-        <img class="linea" src="../images/linea_azul.png" alt="separador">
         
-        <section class="grid-section-cont">
-            <article class="contacto-uno">
-                <img class="img-contacto" src="../images/logo_localizacion.png" alt="Contacto">
-            </article>
+        <section class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-sx-6">
+                    <h3 class="titulo">CONTACTO</h3>
+                    <img class="linea" src="../images/linea_azul.png" alt="separador">
+                </div>
+            
+                <article class="col-xs-6 col-md-4 text-center">
+                    <img class="img-contacto" src="../images/logo_localizacion.png" alt="Contacto">
+                </article>
         
-            <article class="contacto-dos">
-                <form class="contacto-formulario" action="get">
-                    <ul>
-                        <li class="contacto_lista">
-                            <label class="contacto_etiqueta" for="nombre">Nombre y Apellido:</label>
-                            <input class="contacto_cajas_txt" placeholder="Nombre y Apellido" type="text">
-                        </li>
-                        <li class="contacto_lista">
-                            <label class="contacto_etiqueta" for="empresa">Empresa:</label>
-                            <input class="contacto_cajas_txt" placeholder="Empresa" type="text">
-                        </li>
-                        <li class="contacto_lista">
-                            <label class="contacto_etiqueta" for="mail">Correo electrónico:</label>
-                            <input class="contacto_cajas_txt" placeholder="Email" type="email">
-                        </li>
-                        <li class="contacto_lista">
-                            <label class="contacto_etiqueta" for="mensaje">Mensaje:</label>
-                            <input class="contacto_caja_msj" placeholder="Mensaje" type="text">
-                        </li>
-                        <li class="contacto_boton">
-                            <button class="boton" type="submit">Enviar</button>
-                        </li>
-                    </ul>
-                </form>
-            </article>
+                <article class="col-xs-6 col-md-4 text-center">
+                    <form action="get">
+                        <ul class="container-fluid">
+                            <li class="row justify-content-center contacto_lista">
+                                <div class="col-xs-6 col-md-6 text-center">
+                                    <label class="contacto_etiqueta" for="nombre">Nombre y Apellido</label>
+                                </div>
+                                <div class="col-xs-6 col-md-6 text-center">    
+                                    <input class="contacto_cajas_txt" placeholder="Nombre y Apellido" type="text">
+                                </div>
+                            </li>
+                            <li class="row justify-content-center contacto_lista">
+                                <div class="col-xs-6 col-md-6 text-center">
+                                    <label class="contacto_etiqueta" for="empresa">Empresa</label>
+                                </div>
+                                <div class="col-xs-6 col-md-6 text-center">
+                                    <input class="contacto_cajas_txt" placeholder="Empresa" type="text">
+                                </div>
+                            </li>
+                            <li class="row justify-content-center contacto_lista">
+                                <div class="col-xs-6 col-md-6 text-center">
+                                    <label class="contacto_etiqueta" for="mail">Correo Electronico</label>
+                                </div>
+                                <div class="col-xs-6 col-md-6 text-center">
+                                    <input class="contacto_cajas_txt" placeholder="Email" type="email">
+                                </div>
+                            </li>
+                            <li class="row justify-content-center contacto_lista">
+                                <div class="col-xs-6 col-md-6 text-center">
+                                    <label class="contacto_etiqueta" for="mensaje">Mensaje</label>
+                                </div>
+                                <div class="col-xs-6 col-md-6 text-center">
+                                    <input class="contacto_caja_msj" placeholder="Mensaje" type="text">
+                                </div>
+                            </li>
+                            <li class="row justify-content-center contacto_boton">
+                                <div class="col-xs-6 col-md-6">
+                                    <button class="boton" type="submit">Enviar</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                </article>
+            </div>
         </section>
 
         <!--Seccion Redes Sociales-->
-        <section class="grid-redes">
-            <div class="redes">
-                <a href="https://twitter.com/gestadata"><img src="../images/logo_twitter.png" alt="twitter" width="40" height="40"></a>
-                <a href="https://www.instagram.com/gestadata/"><img src="../images/logo_instagram.png" alt="instagram" width="40" height="40"></a> 
-                <a href="https://www.linkedin.com/"><img src="../images/logo_linkedin.png" alt="linkedin" width="40" height="40"></a>
+        <section class="container-fluid redes">
+            <div class="row justify-content-center">
+                <div class="col-sx-12 text-center">
+                    <a href="https://twitter.com/gestadata"><img class="img-redes trans-redesloc" src="../images/logo_twitter.png" alt="twitter"></a>
+                    <a href="https://www.instagram.com/gestadata/"><img class="img-redes trans-redesloc" src="../images/logo_instagram.png" alt="instagram"></a> 
+                    <a href="https://www.linkedin.com/"><img class="img-redes trans-redesloc" src="../images/logo_linkedin.png" alt="linkedin"></a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="pie-pagina">
-        <p class="copyr">Gestadata Copyright &copy 2022</p>
+    <footer class="container pie-pagina">
+        <div class="row justify-content-center">
+            <div class="col-sx-12 text-center">
+                <p class="copyr">Gestadata Copyright &copy 2022</p>
+            </div>
+        </div>
     </footer>
     
 </body>

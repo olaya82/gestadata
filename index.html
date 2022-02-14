@@ -4,119 +4,155 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/bootstrap/css/bootstrap.css">
     <link rel="shortcut icon" href="./assets/images/gestadata_icon.png">
     <!--Estilos-->
     <link rel="stylesheet" type="text/css" href="./assets/styles/estilos.css" media="screen">
+    <script type="text/javascript">
+
+        document.addEventListener("DOMContentLoaded", function(){
+	    // add padding top to show content behind navbar
+    	    navbar_height = document.querySelector('.navbar').offsetHeight;
+	        document.body.style.paddingTop = navbar_height + 'px';
+        }); 
+        // DOMContentLoaded  end
+    </script>
+
     <title>Gestadata</title>
 </head>
-<body class="grid-contenedor-inicio">
-    <header class="grid-header">
+<body>
+    <header class="container-fluid fixed-top">
         <!--Logo Empresarial-->
         <img class="logo" src="./assets/images/GESTADATA_LOGOS-01.png" alt="Logo Gestadata">
     </header>
-    <nav class="grid-nav">
-        <!--Menu de Navegación-->
-        <ul class="menu_lineal">
-            <li class="menu"><a href="./index.html">INICIO</a></li>
-            <li class="menu"><a href="assets/pages/nosotros.html">NOSOTROS</a></li>
-            <li class="menu"><a href="assets/pages/servicios.html">SERVICIOS</a></li>
-            <li class="menu"><a href="assets/pages/tecnologias.html">TECNOLOGIAS</a></li>
-            <li class="menu"><a href="assets/pages/contacto.html">CONTACTO</a></li>
-        </ul>
+    
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item menu"><a href="./index.html">INICIO</a></li>
+                        <li class="nav-item menu"><a href="assets/pages/nosotros.html">NOSOTROS</a></li>
+                        <li class="nav-item menu"><a href="assets/pages/servicios.html">SERVICIOS</a></li>
+                        <li class="nav-item menu"><a href="assets/pages/tecnologias.html">TECNOLOGIAS</a></li>
+                        <li class="nav-item menu"><a href="assets/pages/contacto.html">CONTACTO</a></li>
+                    </ul>
+            </div> <!-- navbar-collapse.// -->
+        </div> <!-- container-fluid.// -->
     </nav>
 
-    <main class="grid-main-inicio">
+    <main> 
         <!--Seccion Bienvenida-->
-        <section class="grid-section-inicio">
-            <article class="inicio-uno">
-                
-                <div class="inicio_uno_bkg trans-texto-incio">
-                    <h1>Midiendo estas Gestionando</h1>
-                    <h3>Transforma tu empresa tomando mejores desiciones</h3>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo delectus blanditiis alias, quaerat ipsum, quod aperiam corrupti dolorem nam voluptatibus, totam impedit rerum expedita eligendi dolor amet sit! Odit, est?</p>
-                </div>
-            </article>
-            <article class="inicio-dos">
-                <img class="img-inicio-uno trans-img-inicio" src="./assets/images/businessman_1.png" alt="bienvenida">
-            </article>
+        <section class="container-fluid">
+            <div class="row justify-content-center">
+                <article class="col-xs-6 col-md-5 text-center">
+                    <h3>Midiendo estas Gestionando</h3>
+                    <h4>Transforma tu empresa tomando mejores desiciones</h4>
+                    <p>ipsum dolor sit, amet consectetur adipisicing elit. Explicabo delectus blanditiis alias, quaerat ipsum, quod aperiam corrupti dolorem nam voluptatibus, totam impedit rerum expedita eligendi dolor amet sit! Odit, est?</p>
+                </article>
+                <article class="col-xs-6 col-md-3 text-center">
+                    <img class="img-inicio-uno trans-img-inicio" src="./assets/images/businessman_1.png" alt="bienvenida">
+                </article>
+            </div>
         </section>
         
         <!--Seccion Nosotros-->
-        <h2 class="titulo titulo-inicio-animado">NOSOTROS</h2>
-        <img class="linea" src="./assets/images/linea_azul.png" alt="separador">
-        <section class="grid-section-inicio">
-            <article class="inicio-nos-uno trans-img-inicio">
-                <img src="./assets/images/business_man_woman.png" alt="nosotros" width="135" height="225">
-            </article>
-            <article class="inicio-nos-dos trans-texto-incio">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo delectus blanditiis alias, quaerat ipsum, quod aperiam corrupti dolorem nam voluptatibus, totam impedit rerum expedita eligendi dolor amet sit! Odit, est?</p>
-            </article>
+        
+        <section class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-sx-6">
+                    <h3 class="titulo titulo-inicio-animado">NOSOTROS</h3>
+                    <img class="linea" src="./assets/images/linea_azul.png" alt="separador">    
+                </div>
+                <article class="col-xs-6 col-md-4 text-center inicio-nos-uno trans-img-inicio">
+                    <img src="./assets/images/business_man_woman.png" alt="nosotros" width="135" height="225">
+                </article>
+                <article class="col-xs-6 col-md-4 text-center inicio-nos-text trans-texto-incio">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo delectus blanditiis alias, quaerat ipsum, quod aperiam corrupti dolorem nam voluptatibus, totam impedit rerum expedita eligendi dolor amet sit! Odit, est?</p>
+                </article>
+            </div>
         </section>
         
         <!--Seccion Servicios-->
-        <h2 class="titulo titulo-inicio-animado">SERVICIOS</h2>
-        <img class="linea" src="./assets/images/linea_azul.png" alt="separador">
-        <section class="grid-section-inicio">
-            
-            <article class="inicio-serv-uno trans-texto-incio">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo delectus blanditiis alias, quaerat ipsum, quod aperiam corrupti dolorem nam voluptatibus</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo delectus blanditiis alias, quaerat ipsum, quod aperiam corrupti dolorem nam voluptatibus</p>
-            </article>
-            <article class="inicio-serv-dos trans-img-inicio">
-                <img class="img-inicio-serv" src="./assets/images/businessman_3.png" alt="servicios">
-            </article>
+        
+        <section class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-sx-6">
+                    <h3 class="titulo titulo-inicio-animado">SERVICIOS</h3>
+                    <img class="linea" src="./assets/images/linea_azul.png" alt="separador">
+                </div>
+                <article class="col-xs-6 col-md-4 text-center inicio-serv-text trans-texto-incio">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo delectus blanditiis alias, quaerat ipsum, quod aperiam corrupti dolorem nam voluptatibus</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo delectus blanditiis alias, quaerat ipsum, quod aperiam corrupti dolorem nam voluptatibus</p>
+                </article>
+                <article class="col-xs-6 col-md-4 text-center trans-img-inicio">
+                    <img class="img-inicio-serv" src="./assets/images/businessman_3.png" alt="servicios">
+                </article>
+            </div>
         </section>
 
         <!--Seccion Tecnologias-->
         
-        <h2 class="titulo titulo-inicio-animado">TECNOLOGÍAS</h2>
-        <img class="linea" src="./assets/images/linea_azul.png" alt="separador">
-        <section class="grid-section-inicio">
-            <article class="inicio-tec-uno trans-img-inicio">
-                <img src="./assets/images/microsoft_logo.png" alt="Microsoft">
-            </article>
+        <section class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-sx-6">
+                    <h3 class="titulo titulo-inicio-animado">TECNOLOGÍAS</h3>
+                    <img class="linea" src="./assets/images/linea_azul.png" alt="separador">
+                </div>
+                <article class="col-xs-6 col-md-4 text-center inicio-tec trans-img-inicio">
+                    <img class="img-inicio-tec-microsoft" src="./assets/images/microsoft_logo.png" alt="Microsoft">
+                    <h3 class="subtitulo">Microsoft</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo delectus blanditiis alias, quaerat ipsum, quod aperiam corrupti dolorem nam voluptatibus, totam impedit rerum expedita eligendi dolor amet sit! Odit, est?</p>
+                </article>
             
-            <article class="inicio-tec-dos trans-img-inicio">
-                <img src="./assets/images/salesforce_logo.png" alt="Salesforce">
-            </article>
-            
-            <article class="inicio-tec-tres trans-texto-incio">
-                <h3 class="subtitulo">Microsoft</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo delectus blanditiis alias, quaerat ipsum, quod aperiam corrupti dolorem nam voluptatibus, totam impedit rerum expedita eligendi dolor amet sit! Odit, est?</p>
-            </article>
-            
-            <article class="inicio-tec-cuatro trans-texto-incio">
-                <h3 class="subtitulo">Salesforce</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo delectus blanditiis alias, quaerat ipsum, quod aperiam corrupti dolorem nam voluptatibus, totam impedit rerum expedita eligendi dolor amet sit! Odit, est?</p>
-            </article>
+                <article class="col-xs-6 col-md-4 text-center trans-img-inicio">
+                    <img class="img-inicio-tec-salesforce" src="./assets/images/salesforce_logo.png" alt="Salesforce">
+                    <h3 class="subtitulo">Salesforce</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo delectus blanditiis alias, quaerat ipsum, quod aperiam corrupti dolorem nam voluptatibus, totam impedit rerum expedita eligendi dolor amet sit! Odit, est?</p>
+                </article>
+            </div>
         </section>
 
         <!--Seccion Contacto-->
         
-        <h2 class="titulo titulo-inicio-animado">CONTACTO</h2>
-        <img class="linea" src="./assets/images/linea_azul.png" alt="separador">
-        <section class="grid-section-inicio">
-            <article class="inicio-cont-uno trans-redesloc">
-                <img class="img-inicio-contact" src="./assets/images/logo_localizacion.png" alt="Contacto">
-            </article>
+        <section class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-sx-6">
+                    <h3 class="titulo titulo-inicio-animado">CONTACTO</h3>
+                    <img class="linea" src="./assets/images/linea_azul.png" alt="separador">
+                </div>
             
-            <article class="inicio-cont-dos trans-texto-incio">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo delectus blanditiis alias, quaerat ipsum, quod aperiam corrupti dolorem nam voluptatibus.</p>
-            </article>
+                <article class="col-xs-6 col-md-4 text-center img-inicio-contact trans-redesloc">
+                    <img class="img-inicio-contact" src="./assets/images/logo_localizacion.png" alt="Contacto">
+                </article>
+            
+                <article class="col-xs-6 col-md-3 text-center inicio-cont-text trans-texto-incio">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo delectus blanditiis alias, quaerat ipsum, quod aperiam corrupti dolorem nam voluptatibus.</p>
+                </article>
+            </div>
         </section>
         
         <!--Seccion Redes Sociales-->
-        <section class="grid-redes">
-            <div class="redes">
-                <a href="https://twitter.com/gestadata"><img class="img-redes trans-redesloc" src="./assets/images/logo_twitter.png" alt="twitter"></a>
-                <a href="https://www.instagram.com/gestadata/"><img class="img-redes trans-redesloc" src="./assets/images/logo_instagram.png" alt="instagram"></a> 
-                <a href="https://www.linkedin.com/"><img class="img-redes trans-redesloc" src="./assets/images/logo_linkedin.png" alt="linkedin"></a>
+        
+        <section class="container-fluid redes">
+            <div class="row justify-content-center">
+                <div class="col-sx-12 text-center">
+                    <a href="https://twitter.com/gestadata"><img class="img-redes trans-redesloc" src="./assets/images/logo_twitter.png" alt="twitter"></a>
+                    <a href="https://www.instagram.com/gestadata/"><img class="img-redes trans-redesloc" src="./assets/images/logo_instagram.png" alt="instagram"></a> 
+                    <a href="https://www.linkedin.com/"><img class="img-redes trans-redesloc" src="./assets/images/logo_linkedin.png" alt="linkedin"></a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="pie-pagina">
-        <p class="copyr">Gestadata Copyright &copy 2022</p>
+    <footer class="container pie-pagina">
+        <div class="row justify-content-center">
+            <div class="col-sx-12 text-center">
+                <p class="copyr">Gestadata Copyright &copy 2022</p>
+            </div>
+        </div>
     </footer>
     
 </body>

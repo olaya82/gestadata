@@ -19,58 +19,39 @@
     font-family: gd_code_bold;
     margin: 0;
     padding: 0;
-    color: #424242;
-    
+    color: #424242;   
 }
 
 body {
-    margin-top: 40px;
-    margin-left: 50px;
+    margin-top: 50px;
+}
+
+header {
+    background-color: #E4E4E4;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #424242;
 }
 
 .titulo {
-    grid-column-start: 2;
     margin-top: 20px;
     margin-left: 75px;
 }
     
 .linea {
-    grid-column-start: 2;
     margin-left: 70px;
     text-align: center;
+    width: 1200px;
 }
 
 .logo {
-    width: 150px;
-    height: 150px;
-}
-
-/*  GRIDS  */
-
-.grid-contenedor {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 150px 900px 80px;
-    grid-gap: 20px;
-}
-
-.grid-header {
-    grid-column-start: 2;
-}
-
-/*    Menu   */
-
-.grid-nav {
-    grid-column-start: 3;
-    grid-column-end: 12;
-}
-
-.menu_lineal {
-    display: inline-block;
-    border-radius: 5px;
-    text-align: center;
-    list-style-type: none;
-    color: #424242;
+    margin-top: 0px;
+    margin-left: 30PX;
+    width: 120px;
+    height: 120px;
 }
 
 .menu {
@@ -84,136 +65,40 @@ body {
     color: #424242;
 }
 
-a{
-    text-decoration: none;
-    font-size: 22px;
-    color: #424242;
-}
-
-.grid-main {
-    display:grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 50px 20px;
-    grid-column-start: 2;
-    grid-column-end: 12;
-}
-
-.grid-section {
-    display: grid;
-    grid-column-start: 2;
-    height: 300px;
-    margin-top: 20px;
-    margin-left: 75px;
-}
-
-/*  INICIO  */
-
-.grid-contenedor-inicio {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 150px 1880px 80px;
-    grid-gap: 20px;
-}
-
-.grid-main-inicio {
-    display:grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 300px 50px;
-    grid-column-start: 2;
-    grid-column-end: 12;
-}
-
-.grid-section-inicio {
-    display: grid;
-    grid-column-start: 2;
-    height: 300px;
-    margin-top: 20px;
-    margin-left: 75px;
-}
-
-.inicio-uno {
-    grid-column-start: 2;
-    width: 400px;
-    text-align: center;
-    padding: 20px;
-    margin-top: 45px;
-    margin-bottom: 50px;
-}
-
-.inicio-dos {
-    grid-column-start: 3;
-    width: 300px;
-    margin-top: 20px;
-}
-
 .img-inicio-uno {
-    height: 245px;
-    width: 225px;
+    height: 225px;
+    width: 205px;
 }
 
-.inicio-nos-uno {
-    grid-column-start: 3;
-    width: 300px;
-    margin-top: 20px;
+.inicio-nos-text {
+    width: 400px;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 50px;
 }
 
-.inicio-nos-dos {
-    grid-column-start: 4;
+.inicio-serv-text {
     width: 400px;
     text-align: center;
-    padding: 20px;
-    margin-top: 45px;
-    margin-bottom: 50px;
+    padding-top: 50px;
+    
 }
 
 .img-inicio-serv {
-    height: 225px;
-    width: 135px;
+    height: 285px;
+    width: 195px;
 }
 
-.inicio-serv-uno {
-    grid-column-start: 3;
-    width: 400px;
-    text-align: center;
+.inicio-tec {
+    padding-top: 50px;
+}
+
+.img-inicio-tec-microsoft {
+    padding: 37px;
+}
+
+.img-inicio-tec-salesforce {
     padding: 20px;
-    margin-top: 45px;
-    margin-bottom: 50px;
-}
-
-.inicio-serv-dos {
-    grid-column-start: 4;
-    width: 300px;
-    margin-top: 20px;
-}
-
-.inicio-tec-uno {
-    grid-column-start: 2;
-    margin-top: 50px;
-    text-align: center;
-}
-
-.inicio-tec-dos {
-    grid-column-start: 4;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.inicio-tec-tres {
-    grid-column-start: 2;
-    width: 350px;
-    text-align: center;
-    margin-bottom: 50px;
-    padding-top: 0px;
-    padding: 0px 40px;
-}
-
-.inicio-tec-cuatro {
-    grid-column-start: 4;
-    width: 350px;
-    text-align: center;
-    margin-bottom: 50px;
-    padding-top: 0px;
-    padding: 0px 40px;
 }
 
 .img-inicio-contact {
@@ -221,22 +106,34 @@ a{
     width: 220px;
 }
 
-.inicio-cont-uno {
-    grid-column-start: 2;
-    margin-top: 50px;
+.inicio-cont-text {
+    padding-top: 60px;
+    padding-left: 50px;
     text-align: center;
 }
 
-.inicio-cont-dos {
-    grid-column-start: 3;
-    width: 400px;
-    text-align: center;
-    padding: 50px;
-    margin-top: 45px;
-    margin-bottom: 50px;
+.redes {
+    margin-top: 70px;
+    margin-bottom: 30px;
 }
 
-/*  SECCION NOSOTROS  */
+
+.img-redes {
+    height: 50px;
+    width: 50px;
+}
+.pie-pagina {
+    height: 50px;
+    background-color: #00aff5;
+    padding-top: 15px;
+}
+
+article {
+    padding-top: 20px;
+    text-align: center;
+}
+
+/*   SECCION NOSOTROS  */
 
 .img-nosotros-uno {
     height: 220px;
@@ -248,37 +145,7 @@ a{
     width: 246px;
 }
 
-.nosotros-uno {
-    grid-column-start: 2;
-    width: 300px;
-    margin-top: 20px;
-}
-
-.nosotros-dos {
-    grid-column-start: 3;
-    width: 400px;
-    text-align: center;
-    padding: 20px;
-    margin-top: 45px;
-    margin-bottom: 50px; 
-}
-
-.nosotros-tres {
-    grid-column-start: 2;
-    width: 400px;
-    text-align: center;
-    padding: 20px;
-    margin-top: 45px;
-    margin-bottom: 50px;
-}
-
-.nosotros-cuatro {
-    grid-column-start: 3;
-    width: 300px;
-    margin-top: 20px;
-}
-
-/*  SECCION SERVICIOS  */
+/*   SECCION SERVICIOS   */
 
 .img-servicios-uno {
     height: 224px;
@@ -290,45 +157,7 @@ a{
     width: 305px;
 }
 
-.servicios-uno {
-    grid-column-start: 2;
-    width: 400px;
-    text-align: center;
-    padding: 30px;
-    margin-top: 45px;
-    margin-bottom: 50px;
-}
-
-.servicios-dos {
-    grid-column-start: 3;
-    width: 300px;
-    margin-top: 20px;
-}
-
-.servicios-tres {
-    grid-column-start: 2;
-    width: 300px;
-    margin-top: 55px;
-}
-
-.servicios-cuatro {
-    grid-column-start: 3;
-    width: 400px;
-    text-align: center;
-    padding: 35px;
-    margin-top: 45px;
-    margin-bottom: 50px;
-}
-
-/* SECCION TECNOLOGIAS  */
-
-.grid-section-tec {
-    display: grid;
-    grid-column-start: 2;
-    margin-top: 20px;
-    margin-left: 75px;
-    margin-bottom: 115px;
-}
+/*   SECCION TECNOLOGIAS  */
 
 .img-tecnologias-uno {
     height: 200px; 
@@ -340,45 +169,6 @@ a{
     width: 200px;
 }
 
-.tecnologias-uno {
-    grid-column-start: 2;
-    margin-top: 20px;
-    padding-top: 50px;
-    text-align: center;
-    width: 430px;
-    margin-bottom: 0px;
-}
-
-.tecnologias-dos {
-    grid-column-start: 4;
-    margin-top: 20px;
-    padding-top: 50px;
-    width: 430px;
-    text-align: center;
-}
-
-.subtitulo {
-    margin-bottom: 10px;
-    font-weight:bolder;
-}
-
-.tecnologias-tres{
-    grid-column-start: 2;
-    width: 350px;
-    text-align: center;
-    margin-bottom: 50px;
-    padding-top: 0px;
-    padding: 0px 40px;
-}
-
-.tecnologias-cuatro{
-    grid-column-start: 4;
-    width: 350px;
-    text-align: center;
-    margin-bottom: 50px;
-    padding: 0px 40px;
-}
-
 /*  SECCION CONTACTO  */
 
 .img-contacto {
@@ -386,37 +176,12 @@ a{
     width: 320px;
 }
 
-.grid-section-cont {
-    display: grid;
-    grid-column-start: 2;
-    margin-top: 20px;
-    margin-left: 75px;
-    margin-bottom: 228px;
-}
-
-.contacto-uno {
-    grid-column-start: 1;
-    text-align: center;
-    margin-top: 40px;
-}
-
-.contacto-dos {
-    display: grid;
-    grid-column-start: 2;
-}
-
-.contacto-formulario {
-    grid-column-start: 3;
-    grid-gap: 16px;
-    text-align: left;
-}
-
 .contacto_lista {
     list-style-type: none;
 }
 
 .contacto_cajas_txt {
-    display: inline-block;
+    
     position: relative;
     height: 30px;
     width: 300px;
@@ -440,12 +205,10 @@ a{
 }
 
 .contacto_etiqueta {
-    display: inline-block;
-    width: 200px;
+    width: 205px;
     height: 30px;
-    padding: 5px;
+    padding: 8px;
     border-radius: 5px;
-    margin: 3px;
     list-style-type: none;
     color: #424242;
     font-size: 18px;
@@ -454,11 +217,13 @@ a{
 }
 
 .contacto_boton {
+    width: 510px;
     text-align: right;
+    padding-left: 300px;
+    list-style-type: none;
 }
 
 .boton {
-    display: inline-block;
     height: 50px;
     width: 150px;
     margin-top: 30px;
@@ -469,40 +234,9 @@ a{
     border-style: hidden;
 }
 
-/*   REDES  */
+/*   RESPONSIVE   */
 
-.grid-redes {
-    display: grid;
-    text-align: center;
-    grid-column-start: 2;
-    height: 60px;
-    margin-top: 20px;
-    margin-left: 75px;
-}
-
-.redes {
-    margin-top: 10px;
-}
-
-.img-redes {
-    height: 40px;
-    width: 40px;
-}
-
-
-/*  PIE DE PAGINA  */
-
-.pie-pagina {
-    grid-template-columns: repeat(12, 1fr);
-    grid-column-start: 2;
-    grid-column-end: 12;
-    text-align: center;
-    vertical-align: middle;
-    height: 50px;
-    padding-top: 30px;
-    background-color: #00aff5;
-}
-
+@media (min-width: 1200px) {
 
 /*   TRANSICIONES   */
 
@@ -581,14 +315,123 @@ a{
     animation-duration: 3s;
 }
 
-@keyframes img-nos {
-    from {
-        transform: translate(200px);
-        opacity: 0;
+    @keyframes img-nos {
+        from {
+            transform: translate(200px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translate(0);
+            opacity: 1;
+        }
     }
 
-    to {
-        transform: translate(0);
-        opacity: 1;
+}
+
+/*   TABLET   */
+
+@media (max-width: 991.98px) {
+    header {
+        text-align: end;
     }
+
+    .titulo {
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 75px;
+    }
+
+    .linea {
+        margin-left: 70px;
+        text-align: center;
+        width: 700px;
+    }
+
+    .img-contacto {
+        height: 240px;
+        width: 270px;
+    }
+
+    .contacto_etiqueta {
+        width: 205px;
+        height: 30px;
+        padding: 8px;
+        border-radius: 5px;
+        list-style-type: none;
+        color: #424242;
+        font-size: 18px;
+        text-align: center;
+        color: #0c598d;
+    }
+
+    .contacto_cajas_txt {
+        height: 30px;
+        width: 220px;
+        border-radius: 20px;
+        margin-top: 5px;
+        font-size: 16px;
+        padding-left: 10px;
+        background-color: #cfcfcf;
+        border-style: hidden;
+    }
+
+    .contacto_caja_msj {
+        height: 200px;
+        width: 220px;
+        border-radius: 20px;
+        font-size: 16px;
+        margin-top: 3px;
+        padding-left: 10px;
+        background-color: #cfcfcf;
+        border-style: hidden;
+    }
+
+    .contacto_boton {
+        width: 300px;
+        text-align: center;
+        padding-left: 140px;
+        list-style-type: none;
+    }
+}
+
+/*   MOBILE   */
+
+@media (max-width: 575.98px) {
+    header {
+        text-align: end;
+    }
+
+    .titulo {
+        text-align: center;
+        margin-top: 20px;
+        background-color: red;
+        width: 290px;
+    }
+
+    .linea {
+        text-align: center;
+        width: 300px;
+        padding: 0px;
+    }
+
+    .contacto_etiqueta {
+        width: 205px;
+        height: 30px;
+        padding: 8px;
+        border-radius: 5px;
+        list-style-type: none;
+        color: #424242;
+        font-size: 18px;
+        text-align: center;
+        color: #0c598d;
+    }
+
+    .contacto_boton {
+        width: 300px;
+        text-align: center;
+        padding-left: 140px;
+        list-style-type: none;
+    }
+    
 }

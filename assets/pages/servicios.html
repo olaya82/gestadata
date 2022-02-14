@@ -4,64 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
     <link rel="shortcut icon" href="../images/gestadata_icon.png">
     <!--Estilos-->
     <link rel="stylesheet" type="text/css" href="../styles/estilos.css" media="screen">
+    <script type="text/javascript">
+
+        document.addEventListener("DOMContentLoaded", function(){
+	    // add padding top to show content behind navbar
+    	    navbar_height = document.querySelector('.navbar').offsetHeight;
+	        document.body.style.paddingTop = navbar_height + 'px';
+        }); 
+        // DOMContentLoaded  end
+    </script>
+    
     <title>Gestadata - Servicios</title>
 </head>
-<body class="grid-contenedor">
-    <header class="grid-header">
+<body>
+    <header class="container-fluid fixed-top">
         <!--Logo Empresarial-->
         <img class="logo" src="../images/GESTADATA_LOGOS-01.png" alt="Logo Gestadata">
     </header>
 
-    <nav class="grid-nav">
-        <!--Menu de Navegación-->
-        <ul class="menu_lineal">
-            <li class="menu"><a href="../../index.html">INICIO</a></li>
-            <li class="menu"><a href="../pages/nosotros.html">NOSOTROS</a></li>
-            <li class="menu"><a href="../pages/servicios.html">SERVICIOS</a></li>
-            <li class="menu"><a href="../pages/tecnologias.html">TECNOLOGIAS</a></li>
-            <li class="menu"><a href="../pages/contacto.html">CONTACTO</a></li>
-        </ul>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item menu"><a href="../../index.html">INICIO</a></li>
+                        <li class="nav-item menu"><a href="../pages/nosotros.html">NOSOTROS</a></li>
+                        <li class="nav-item menu"><a href="../pages/servicios.html">SERVICIOS</a></li>
+                        <li class="nav-item menu"><a href="../pages/tecnologias.html">TECNOLOGIAS</a></li>
+                        <li class="nav-item menu"><a href="../pages/contacto.html">CONTACTO</a></li>
+                    </ul>
+            </div> <!-- navbar-collapse.// -->
+        </div> <!-- container-fluid.// -->
     </nav>
 
-    <main class="grid-main">
+    <main>
         <!--Seccion Servicios-->
-        <h1 class="titulo">SERVICIOS</h1>
-        <img class="linea" src="../images/linea_azul.png" alt="separador">
-        <section class="grid-section">
-            <article class="servicios-uno"> 
-                <h3 class="subtitulo">Analitica de Datos</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo delectus blanditiis alias, quaerat ipsum, quod aperiam corrupti dolorem nam voluptatibus, totam impedit rerum expedita eligendi dolor amet sit! Odit, est? Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            </article>
-            <article class="servicios-dos">
-                <img class="img-servicios-uno" src="../images/data_analytics_3.png" alt="nosotros">
-            </article>
+
+        <section class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-sx-6 izq-der-nos">
+                    <h3 class="titulo">SERVICIOS</h3>
+                    <img class="linea" src="../images/linea_azul.png" alt="separador">    
+                </div>
+                
+                <article class="col-xs-6 col-md-4 text-center izq-der-nos"> 
+                    <h4 class="subtitulo">Analitica de Datos</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo delectus blanditiis alias, quaerat ipsum, quod aperiam corrupti dolorem nam voluptatibus, totam impedit rerum expedita eligendi dolor amet sit! Odit, est? Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </article>
+                
+                <article class="col-xs-6 col-md-4 text-center der-izq-nos">
+                    <img class="img-servicios-uno" src="../images/data_analytics_3.png" alt="nosotros">
+                </article>
+            </div>
         </section>
 
-        <section class="grid-section">
-            <article class="servicios-tres">
-                <img class="img-servicios-dos" src="../images/dashboard_3.png" alt="nosotros" width="305" height="162">
-            </article>
-            <article class="servicios-cuatro">
-                <h3 class="subtitulo">Visualización de Datos</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo delectus blanditiis alias, quaerat ipsum, quod aperiam corrupti dolorem nam voluptatibus, totam impedit rerum expedita eligendi dolor amet sit! Odit, est? Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </article>
+        <section class="container-fluid">
+            <div class="row justify-content-center">
+                <article class="col-xs-6 col-md-4 text-center izq-der-nos">
+                    <img class="img-servicios-dos" src="../images/dashboard_3.png" alt="nosotros" width="305" height="162">
+                </article>
+                <article class="col-xs-6 col-md-4 text-center der-izq-nos">
+                    <h4 class="subtitulo">Visualización de Datos</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo delectus blanditiis alias, quaerat ipsum, quod aperiam corrupti dolorem nam voluptatibus, totam impedit rerum expedita eligendi dolor amet sit! Odit, est? Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+            </div>
         </section>
 
         <!--Seccion Redes Sociales-->
-        <section class="grid-redes">
-            <div class="redes">
-                <a href="https://twitter.com/gestadata"><img src="../images/logo_twitter.png" alt="twitter" width="40" height="40"></a>
-                <a href="https://www.instagram.com/gestadata/"><img src="../images/logo_instagram.png" alt="instagram" width="40" height="40"></a> 
-                <a href="https://www.linkedin.com/"><img src="../images/logo_linkedin.png" alt="linkedin" width="40" height="40"></a>
+        <section class="container-fluid redes">
+            <div class="row justify-content-center">
+                <div class="col-sx-12 text-center">
+                    <a href="https://twitter.com/gestadata"><img class="img-redes trans-redesloc" src="../images/logo_twitter.png" alt="twitter"></a>
+                    <a href="https://www.instagram.com/gestadata/"><img class="img-redes trans-redesloc" src="../images/logo_instagram.png" alt="instagram"></a> 
+                    <a href="https://www.linkedin.com/"><img class="img-redes trans-redesloc" src="../images/logo_linkedin.png" alt="linkedin"></a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="pie-pagina">
-        <p>Gestadata Copyright &copy 2022</p>
+    <footer class="container pie-pagina">
+        <div class="row justify-content-center">
+            <div class="col-sx-12 text-center">
+                <p class="copyr">Gestadata Copyright &copy 2022</p>
+            </div>
+        </div>
     </footer>
     
 </body>
