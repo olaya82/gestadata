@@ -1,0 +1,395 @@
+@charset "UTF-8";
+/* Declaración de Fuente */
+@font-face {
+  font-family: "gd_code";
+  src: url("../font/codelight.ttf");
+}
+@font-face {
+  font-family: "gd_code_bold";
+  src: url("../font/codebold.ttf");
+}
+/* Definición de Estilos */
+/*   TITULO   */
+* {
+  font-family: gd_code_bold;
+  margin: 0;
+  padding: 0;
+  color: #424242;
+}
+
+/*   USO SASS   */
+body {
+  margin-top: 50px;
+}
+body header {
+  background-color: #E4E4E4;
+}
+body a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #424242;
+}
+body .titulo {
+  margin-top: 20px;
+  margin-left: 75px;
+}
+body .linea {
+  margin-left: 70px;
+  text-align: center;
+  width: 1200px;
+}
+body .logo {
+  margin-top: 0px;
+  margin-left: 30PX;
+  width: 120px;
+  height: 120px;
+}
+body .menu {
+  display: inline-block;
+  height: 35px;
+  width: 155px;
+  padding-top: 5px;
+  border-radius: 5px;
+  margin-top: 60px;
+  list-style-type: none;
+  color: #424242;
+}
+body .img-inicio-uno {
+  height: 225px;
+  width: 205px;
+}
+body .inicio-nos-text {
+  width: 400px;
+  padding: 20px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+body .inicio-serv-text {
+  width: 400px;
+  text-align: center;
+  padding-top: 50px;
+}
+body .img-inicio-serv {
+  height: 285px;
+  width: 195px;
+}
+body .inicio-tec {
+  padding-top: 50px;
+}
+body .img-inicio-tec-microsoft {
+  padding: 37px;
+}
+body .img-inicio-tec-salesforce {
+  padding: 20px;
+}
+body .img-inicio-contact {
+  height: 190px;
+  width: 220px;
+}
+body .inicio-cont-text {
+  padding-top: 60px;
+  padding-left: 50px;
+  text-align: center;
+}
+body .redes {
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+body .redes .img-redes {
+  height: 50px;
+  width: 50px;
+}
+body .pie-pagina {
+  height: 50px;
+  background-color: #00aff5;
+  padding-top: 15px;
+}
+body article {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.menu {
+  color: white;
+}
+.menu:hover {
+  background-color: #00aff5;
+}
+.menu a:hover {
+  color: white;
+}
+
+/*  FINAL USO SASS   */
+/*   SECCION NOSOTROS  */
+.img-nosotros-uno {
+  height: 220px;
+  width: 275px;
+}
+
+.img-nosotros-dos {
+  height: 249px;
+  width: 246px;
+}
+
+/*   SECCION SERVICIOS   */
+.img-servicios-uno {
+  height: 224px;
+  width: 298px;
+}
+
+.img-servicios-dos {
+  height: 162px;
+  width: 305px;
+}
+
+/*   SECCION TECNOLOGIAS  */
+.img-tecnologias-uno {
+  height: 200px;
+  width: 220px;
+}
+
+.img-tecnologias-dos {
+  height: 200px;
+  width: 200px;
+}
+
+/*  SECCION CONTACTO  */
+.img-contacto {
+  height: 290px;
+  width: 320px;
+}
+
+.contacto_lista {
+  list-style-type: none;
+}
+
+.contacto_cajas_txt {
+  position: relative;
+  height: 30px;
+  width: 300px;
+  border-radius: 20px;
+  margin-top: 5px;
+  font-size: 16px;
+  padding-left: 10px;
+  background-color: #cfcfcf;
+  border-style: hidden;
+}
+
+.contacto_caja_msj {
+  height: 200px;
+  width: 300px;
+  border-radius: 20px;
+  font-size: 16px;
+  margin-top: 3px;
+  padding-left: 10px;
+  background-color: #cfcfcf;
+  border-style: hidden;
+}
+
+.contacto_etiqueta {
+  width: 205px;
+  height: 30px;
+  padding: 8px;
+  border-radius: 5px;
+  list-style-type: none;
+  color: #424242;
+  font-size: 18px;
+  text-align: right;
+  color: #0c598d;
+}
+
+.contacto_boton {
+  width: 510px;
+  text-align: right;
+  padding-left: 300px;
+  list-style-type: none;
+}
+
+.boton {
+  height: 50px;
+  width: 150px;
+  margin-top: 30px;
+  margin-right: 15px;
+  border-radius: 20px;
+  font-size: 18px;
+  background-color: #b4eaff;
+  border-style: hidden;
+}
+
+/*   RESPONSIVE   */
+@media (min-width: 1200px) {
+  /*   TRANSICIONES   */
+  .trans-redesloc:hover {
+    transition: 2s;
+    transform: rotate(360deg);
+  }
+
+  .trans-img-inicio:hover {
+    transition: 2s;
+    transform: scale(1.2);
+  }
+
+  .trans-texto-incio:hover {
+    transition: 2s;
+    transform: scale(1.2);
+  }
+
+  .boton:hover {
+    background-color: #00aff5;
+    color: white;
+    cursor: pointer;
+  }
+
+  /*   ANIMACIONES   */
+  .titulo-inicio-animado {
+    animation-name: titulo;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+  }
+
+  @keyframes titulo {
+    from {
+      transform: translate(-200px);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0);
+      opacity: 1;
+    }
+  }
+  .izq-der-nos {
+    animation-name: izq-der;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+  }
+
+  @keyframes izq-der {
+    from {
+      transform: translate(-200px);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0);
+      opacity: 1;
+    }
+  }
+  .der-izq-nos {
+    animation-name: img-nos;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+  }
+
+  @keyframes img-nos {
+    from {
+      transform: translate(200px);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0);
+      opacity: 1;
+    }
+  }
+}
+/*   TABLET   */
+@media (max-width: 991.98px) {
+  header {
+    text-align: end;
+  }
+
+  .titulo {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 75px;
+  }
+
+  .linea {
+    margin-left: 70px;
+    text-align: center;
+    width: 700px;
+  }
+
+  .img-contacto {
+    height: 240px;
+    width: 270px;
+  }
+
+  .contacto_etiqueta {
+    width: 205px;
+    height: 30px;
+    padding: 8px;
+    border-radius: 5px;
+    list-style-type: none;
+    color: #424242;
+    font-size: 18px;
+    text-align: center;
+    color: #0c598d;
+  }
+
+  .contacto_cajas_txt {
+    height: 30px;
+    width: 220px;
+    border-radius: 20px;
+    margin-top: 5px;
+    font-size: 16px;
+    padding-left: 10px;
+    background-color: #cfcfcf;
+    border-style: hidden;
+  }
+
+  .contacto_caja_msj {
+    height: 200px;
+    width: 220px;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-top: 3px;
+    padding-left: 10px;
+    background-color: #cfcfcf;
+    border-style: hidden;
+  }
+
+  .contacto_boton {
+    width: 300px;
+    text-align: center;
+    padding-left: 140px;
+    list-style-type: none;
+  }
+}
+/*   MOBILE   */
+@media (max-width: 575.98px) {
+  header {
+    text-align: end;
+  }
+
+  .titulo {
+    text-align: center;
+    margin-top: 20px;
+    width: 290px;
+  }
+
+  .linea {
+    text-align: center;
+    width: 300px;
+    padding: 0px;
+  }
+
+  .contacto_etiqueta {
+    width: 205px;
+    height: 30px;
+    padding: 8px;
+    border-radius: 5px;
+    list-style-type: none;
+    color: #424242;
+    font-size: 18px;
+    text-align: center;
+    color: #0c598d;
+  }
+
+  .contacto_boton {
+    width: 300px;
+    text-align: center;
+    padding-left: 140px;
+    list-style-type: none;
+  }
+}
+
+/*# sourceMappingURL=destino.css.map */

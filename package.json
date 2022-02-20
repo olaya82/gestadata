@@ -1,0 +1,26 @@
+{
+  "name": "gestadata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    
+    "build-css": "sass assets/scss/origen.scss assets/css/destino.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olaya82/gestadata.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olaya82/gestadata/issues"
+  },
+  "homepage": "https://github.com/olaya82/gestadata#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "sass": "^1.49.8"
+  }
+}
