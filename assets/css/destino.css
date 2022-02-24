@@ -119,7 +119,7 @@ body article {
   color: white;
 }
 
-/*  FINAL USO SASS   */
+/*  FINAL USO SASS I  */
 /*   SECCION NOSOTROS  */
 .img-nosotros-uno {
   height: 220px;
@@ -163,41 +163,42 @@ body article {
   list-style-type: none;
 }
 
-.contacto_cajas_txt {
-  position: relative;
-  height: 30px;
-  width: 300px;
+/*  EXTEND  */
+.contacto_general, .contacto_caja_msj, .contacto_cajas_txt {
   border-radius: 20px;
-  margin-top: 5px;
   font-size: 16px;
   padding-left: 10px;
   background-color: #cfcfcf;
   border-style: hidden;
+}
+
+.contacto_cajas_txt {
+  position: relative;
+  height: 30px;
+  width: 300px;
+  margin-top: 5px;
 }
 
 .contacto_caja_msj {
   height: 200px;
   width: 300px;
-  border-radius: 20px;
-  font-size: 16px;
   margin-top: 3px;
-  padding-left: 10px;
-  background-color: #cfcfcf;
-  border-style: hidden;
 }
 
+/*  FIN EXTEND  */
+/*  MIXINS */
 .contacto_etiqueta {
-  width: 205px;
   height: 30px;
+  width: 205px;
+  font-size: 18px;
+  text-align: right;
   padding: 8px;
   border-radius: 5px;
   list-style-type: none;
-  color: #424242;
-  font-size: 18px;
-  text-align: right;
   color: #0c598d;
 }
 
+/*  FIN MIXINS  */
 .contacto_boton {
   width: 510px;
   text-align: right;
@@ -224,6 +225,7 @@ body article {
     transform: rotate(360deg);
   }
 
+  /*  MAP   */
   .trans-img-inicio:hover {
     transition: 2s;
     transform: scale(1.2);
@@ -347,6 +349,7 @@ body article {
     border-style: hidden;
   }
 
+  /*  MAP GET  */
   .contacto_boton {
     width: 300px;
     text-align: center;
@@ -361,12 +364,14 @@ body article {
   }
 
   .titulo {
+    /* SASS II  */
     text-align: center;
     margin-top: 20px;
     width: 290px;
   }
 
   .linea {
+    /* SASS II  */
     text-align: center;
     width: 300px;
     padding: 0px;

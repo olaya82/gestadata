@@ -150,10 +150,7 @@ body {
 
 }
 
-
-
-
-/*  FINAL USO SASS   */
+/*  FINAL USO SASS I  */
 
 /*   SECCION NOSOTROS  */
 
@@ -202,41 +199,51 @@ body {
     list-style-type: none;
 }
 
+/*  EXTEND  */
+
+.contacto_general {
+    border-radius: 20px;
+    font-size: 16px;
+    padding-left: 10px;
+    background-color: #cfcfcf;
+    border-style: hidden;
+}
+
 .contacto_cajas_txt {
-    
+    @extend .contacto_general;
     position: relative;
     height: 30px;
     width: 300px;
-    border-radius: 20px;
     margin-top: 5px;
-    font-size: 16px;
-    padding-left: 10px;
-    background-color: #cfcfcf;
-    border-style: hidden;
 }
 
 .contacto_caja_msj {
+    @extend .contacto_general;
     height: 200px;
     width: 300px;
-    border-radius: 20px;
-    font-size: 16px;
     margin-top: 3px;
-    padding-left: 10px;
-    background-color: #cfcfcf;
-    border-style: hidden;
+}
+/*  FIN EXTEND  */
+
+
+/*  MIXINS */
+
+@mixin general($alto, $ancho, $fuente, $alineado) {
+    height: $alto;
+    width: $ancho;
+    font-size: $fuente;
+    text-align: $alineado;
 }
 
 .contacto_etiqueta {
-    width: 205px;
-    height: 30px;
+    @include general(30px, 205px, 18px, right);
     padding: 8px;
     border-radius: 5px;
     list-style-type: none;
-    color: #424242;
-    font-size: 18px;
-    text-align: right;
     color: #0c598d;
 }
+
+/*  FIN MIXINS  */
 
 .contacto_boton {
     width: 510px;
@@ -268,14 +275,18 @@ body {
     
 }
 
-.trans-img-inicio:hover {
-    transition: 2s;
-    transform: scale(1.2);
-}
+/*  MAP   */
 
-.trans-texto-incio:hover {
-    transition: 2s;
-    transform: scale(1.2);
+$transiciones: (
+    img-inicio: 2s,
+    texto-incio: 2s,
+);
+
+@each $nombre, $valor in $transiciones {
+    .trans-#{$nombre}:hover{
+        transition: $valor;
+        transform: scale(1.2);
+    }
 }
 
 .boton:hover {
@@ -400,15 +411,27 @@ body {
         border-style: hidden;
     }
 
+    /*  MAP GET  */
+
+    $estilo_boton: (
+        ancho: 300px,
+        alineado: center,
+        borde_izq: 140px,
+        lista_estilo: none,
+    );
+
     .contacto_boton {
-        width: 300px;
-        text-align: center;
-        padding-left: 140px;
-        list-style-type: none;
+        width: map-get($estilo_boton , ancho);
+        text-align: map-get($estilo_boton , alineado);
+        padding-left: map-get($estilo_boton , borde_izq);
+        list-style-type: map-get($estilo_boton , lista_estilo);
     }
+
 }
 
 /*   MOBILE   */
+
+$ancho: 500px;
 
 @media (max-width: 575.98px) {
     header {
@@ -416,14 +439,16 @@ body {
     }
 
     .titulo {
+        /* SASS II  */
         text-align: center;
         margin-top: 20px;
-        width: 290px;
+        width: calc($ancho/2)+40;
     }
 
     .linea {
+        /* SASS II  */
         text-align: center;
-        width: 300px;
+        width: $ancho - 200;
         padding: 0px;
     }
 
@@ -440,7 +465,7 @@ body {
     }
 
     .contacto_boton {
-        width: 300px;
+        width: $ancho - 200;
         text-align: center;
         padding-left: 140px;
         list-style-type: none;
