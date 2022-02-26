@@ -29,15 +29,6 @@ body a {
   font-size: 20px;
   color: #424242;
 }
-body .titulo {
-  margin-top: 20px;
-  margin-left: 75px;
-}
-body .linea {
-  margin-left: 70px;
-  text-align: center;
-  width: 1200px;
-}
 body .logo {
   margin-top: 0px;
   margin-left: 30PX;
@@ -107,6 +98,18 @@ body .pie-pagina {
 body article {
   padding-top: 20px;
   text-align: center;
+}
+
+.titulo {
+  margin-top: 20px;
+  text-align: start;
+  padding-left: 75px;
+}
+
+.linea {
+  margin-left: 70px;
+  text-align: center;
+  width: 1200px;
 }
 
 .menu {
@@ -300,14 +303,13 @@ body article {
 
   .titulo {
     text-align: center;
-    margin-top: 20px;
-    margin-left: 75px;
+    padding: 0px;
   }
 
   .linea {
     margin-left: 70px;
     text-align: center;
-    width: 700px;
+    width: 500px;
   }
 
   .img-contacto {
@@ -364,10 +366,7 @@ body article {
   }
 
   .titulo {
-    /* SASS II  */
     text-align: center;
-    margin-top: 20px;
-    width: 290px;
   }
 
   .linea {

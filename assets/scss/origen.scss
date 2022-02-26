@@ -37,17 +37,6 @@ body {
         color: #424242;
     }
     
-    .titulo {
-        margin-top: 20px;
-        margin-left: 75px;
-    }
-        
-    .linea {
-        margin-left: 70px;
-        text-align: center;
-        width: 1200px;
-    }
-    
     .logo {
         margin-top: 0px;
         margin-left: 30PX;
@@ -136,6 +125,18 @@ body {
     }
 
 }
+
+.titulo {
+    margin-top: 20px;
+    text-align:start;
+    padding-left: 75px;
+}
+
+.linea {
+    margin-left: 70px;
+    text-align: center;
+    width: 1200px;
+} 
 
 .menu {
     color: white;
@@ -362,14 +363,13 @@ $transiciones: (
 
     .titulo {
         text-align: center;
-        margin-top: 20px;
-        margin-left: 75px;
+        padding: 0px;
     }
 
     .linea {
         margin-left: 70px;
         text-align: center;
-        width: 700px;
+        width: 500px;
     }
 
     .img-contacto {
@@ -439,10 +439,7 @@ $ancho: 500px;
     }
 
     .titulo {
-        /* SASS II  */
         text-align: center;
-        margin-top: 20px;
-        width: calc($ancho/2)+40;
     }
 
     .linea {
