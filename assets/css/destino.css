@@ -35,16 +35,6 @@ body .logo {
   width: 120px;
   height: 120px;
 }
-body .menu {
-  display: inline-block;
-  height: 35px;
-  width: 155px;
-  padding-top: 5px;
-  border-radius: 5px;
-  margin-top: 60px;
-  list-style-type: none;
-  color: #424242;
-}
 body .img-inicio-uno {
   height: 225px;
   width: 205px;
@@ -98,6 +88,17 @@ body .pie-pagina {
 body article {
   padding-top: 20px;
   text-align: center;
+}
+
+.menu {
+  display: inline-block;
+  height: 35px;
+  width: 155px;
+  padding-top: 5px;
+  border-radius: 5px;
+  margin-top: 60px;
+  list-style-type: none;
+  color: #424242;
 }
 
 .titulo {
@@ -301,6 +302,23 @@ body article {
     text-align: end;
   }
 
+  .menu {
+    margin-top: 20px;
+    padding-top: 0px;
+  }
+
+  .togg-menu {
+    margin-right: 700px;
+  }
+
+  .togg {
+    background-color: #E4E4E4 !important;
+  }
+
+  a {
+    color: #424242;
+  }
+
   .titulo {
     text-align: center;
     padding: 0px;
@@ -393,6 +411,18 @@ body article {
     text-align: center;
     padding-left: 140px;
     list-style-type: none;
+  }
+
+  .togg-menu {
+    margin-right: 700px;
+  }
+
+  .togg {
+    background-color: #E4E4E4 !important;
+  }
+
+  a {
+    color: #424242;
   }
 }
 
